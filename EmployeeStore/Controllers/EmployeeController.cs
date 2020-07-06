@@ -21,10 +21,5 @@ namespace EmployeeStore.Controllers
         {
             return View(employees);
         }
-
-        public ActionResult GetEmployee()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
