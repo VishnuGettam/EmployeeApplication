@@ -21,5 +21,11 @@ namespace EmployeeStore.Controllers
         {
             return View(employees);
         }
+
+        public ActionResult GetEmployee(int Id)
+        {
+            var employee = employees.FirstOrDefault(emp => emp.Id == Id);
+            return View(employee);
+        }
     }
 }
