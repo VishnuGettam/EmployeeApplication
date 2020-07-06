@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EmployeeStore.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="h2">Employee Store </h2>
+
+<table border="1" class="table table-bordered table-condensed">
+    <thead>
+        <tr>
+            <td>
+                <b> FirstName</b>
+            </td>
+            <td>
+                <b>LastName</b>
+            </td>
+            <td>
+                <b>Gender</b>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>
+                    @emp.FirstName
+                </td>
+                <td>
+                    @emp.LastName
+                </td>
+                <td>
+                    @emp.Gender
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
