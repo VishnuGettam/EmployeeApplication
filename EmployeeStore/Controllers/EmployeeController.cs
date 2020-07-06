@@ -14,7 +14,7 @@ namespace EmployeeStore.Controllers
         public EmployeeController()
         {
             employees = new List<Employee>();
-            employees.Add(new Employee() { Id = 1, FirstName = "Vishnu", LastName = "Prasad", Gender = "Male" });
+            employees.Add(new Employee() { Id = 1, FirstName = "Vishnu", LastName = "Gettam", Gender = "Male" });
         }
 
         public ActionResult Index()
